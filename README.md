@@ -6,6 +6,7 @@ Problem Statement :
 ====================== Start problem description ==================
 
 Exercise: Using any language of your choice write a script that does the following:
+
 Call http://api.viki.io/v4/videos.json?app=100250a&per_page=10&page=1
 
 To go to next page of response you have to increment the page number in the above url. As long as the "more" field returns 
@@ -34,10 +35,13 @@ Sample Output :
 
 Total no. of pages parsed are
 500
+
 Total no. of response objects that have the flag:hd value set to True is
 4026
+
 Total no. of response objects that have the flag:hd value set to False is
 0
+
 Process finished with exit code 0
 
 Assumptions :
