@@ -26,6 +26,7 @@ Pre-requisites:
 --------------
 
 -> Python Interpreter (3.5.1) => To successfully run the program
+
 -> Pycharm (5.0.4) => UI based Python tool used for scripting and compiling the program
 
 Sample Output :
@@ -43,11 +44,14 @@ Assumptions :
 -----------
 
 -> The 'page' value in the URL starts from 1
+
 -> The '&per_page' value in the URL is maintained at a constant value of 10
 
 Limitations :
 -----------
 
 -> It checks only for the 'more' value as 'true although there are cases when the 'more' value is false and there is data present
+
 -> It computes the 'hd' values with the assumption that &per_page=10'
+
 -> It is not the most optimized implementation and could be refined further, for example, by using internal libraries such as itertools
