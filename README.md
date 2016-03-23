@@ -23,6 +23,11 @@ Finally, please check in your code onto GitHub and share the link.
 
 ====================== End problem description ======================
 
+Interpreted QA Scenario :
+-----------------------
+
+A Python script accesses the viki API, browses through the pages (that has data) in order to compute the total number of HD videos present
+
 Pre-requisites:
 --------------
 
@@ -51,11 +56,11 @@ Assumptions :
 
 -> The '&per_page' value in the URL is maintained at a constant value of 10
 
-Limitations :
------------
+Recommendations for further enhancement :
+---------------------------------------
 
--> It checks only for the 'more' value as 'true although there are cases when the 'more' value is false and there is data present
+-> It checks only for the 'more' value as 'true assuming that only then data is present, although there are cases when the 'more' value is false and there is still data present. It can be enhanced to checked for both values.
 
--> It computes the 'hd' values with the assumption that &per_page=10'
+-> It computes the 'hd' values with the assumption that &per_page=10'. This value can be manipulated for better accuracy
 
 -> It is not the most optimized implementation and could be refined further, for example, by using internal libraries such as itertools
