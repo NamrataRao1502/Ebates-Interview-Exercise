@@ -26,7 +26,7 @@ while (checkMore == True):
     response = opener.open(url)
     data = json.loads(response.read().decode("utf8"))
 
-# Access the response key which is an array of more JSON objects - 'flags' and within 'flags', a key called 'hd'
+# Access the response key which is an array of more JSON objects - 'flags' and within it, a key called 'hd'
     checkMore = data['more']
     checkOther = data['response']
     checkFlags = data['response'][0]['flags']
